@@ -1,0 +1,43 @@
+// Colors
+$colors: (
+    primary:(bg: #E7EFFB,
+        heading:#3F3F3F,
+        text:#ADABB0,
+        card: #FAFAFC,
+    ),
+
+    secondary:(white:#ffffff,
+        blue:#5B8EF3,
+        blur-hover:#0073C2,
+        orange:#F55F03,
+        yellow:#FFA001,
+        purple:#AA46FF,
+        shadow: #00000080,
+        blue-shadow:#79aad8,
+    ),
+);
+
+$colorsDark: (
+    primary:(bg: hsl(209 50% 5%),
+        heading: hsl(209 50% 80%),
+        text: hsl(209 50% 90%),
+        card: hsl(209 50% 10%),
+    ),
+
+    secondary:(shadow: #d6c4c4a3, )
+);
+
+$gradientOne: #F5D47D;
+$gradientTwo: #CF6D5D;
+$gradientThree: #8F849E;
+$gradientFour: #7AB473;
+$gradientFive: #6A6C83;
+
+$linearGradient: $gradientOne, $gradientTwo, $gradientThree, $gradientFour, $gradientFive;
+
+
+
+// bg: hsl(209 50% 10%),
+// heading: hsl(209 50% 80%),
+// text: hsl(209 50% 90%),
+// card-bg: hsl(209 50% 5%),

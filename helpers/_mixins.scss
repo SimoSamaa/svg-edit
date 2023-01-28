@@ -1,0 +1,70 @@
+@use './helpers/colors/colors' as *;
+@use './helpers/sizes' as *;
+
+@mixin lightMode() {
+
+    @each $color,
+    $shades in $colors {
+
+        @each $shade,
+        $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+}
+
+@mixin darkMode() {
+
+    @each $color,
+    $shades in $colorsDark {
+
+        @each $shade,
+        $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+}
+
+@mixin appSize() {
+
+    @each $namSize,
+    $size in $sizes {
+        --#{$namSize}: #{$size};
+    }
+}
+
+@mixin widthAdaptive($width-px, $width-pr) {
+    width: min($width-px, $width-pr);
+}
+
+@mixin linearGradient($bgGradient) {
+    background-image: linear-gradient(45deg, $bgGradient);
+}
+
+@mixin borderDir($dir) {
+    border-#{$dir}: solid 2px var(--clr-secondary-blue);
+}
+
+@mixin colorPickerCursor() {
+    content: "";
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: 20px;
+    height: 20px;
+    border: 6px solid var(--clr-secondary-blue);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 var(--clr-secondary-shadow);
+}
+
+$bottom: "bottom";
+$left: "left";
+
+$class: "hover-drop-up";
+$class2: "custom-size";
+
+@mixin showContent($opa, $vis) {
+    opacity: $opa;
+    visibility: $vis;
+    @content;
+}

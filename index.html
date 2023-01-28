@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <title>svg app</title>
+    <link rel="icon" href="logo/logo.png">
+    <!-- files css -->
+    <link rel="stylesheet" href="./font/font.css">
+    <link rel="stylesheet" href="./main-style.css">
+    <!-- files js -->
+    <script type="module" defer src="./js/main-script.js"></script>
+    <script type="module" defer src="./js/optiones.js"></script>
+    <script type="module" defer src="./js/var.js"></script>
+    <script type="module" defer src="./js/color-picker.js"></script>
+</head>
+
+<body class="trans-in">
+    <main class="main-container">
+        <header>
+            <!-- logo -->
+            <div class="logo">
+                <img src="logo/logo.png" alt="logo" type="image/png">
+                <b class="app-name">Color Editor</b>
+            </div>
+            <!-- change them -->
+            <button class="change-mode">
+                <!-- moon -->
+                <img class="moon trans-in" src="icons/bxs-moon.svg" alt="moon">
+                <!-- sun -->
+                <img class="sun trans-in" src="icons/bxs-sun.svg" alt="sun">
+            </button>
+        </header>
+
+        <!-- upload svg -->
+        <section class="work-space" tabindex="-1">
+            <div class="container-upload__padding">
+                <div class="container-upload">
+                    <img src="icons/upload.svg" alt="upload">
+                    <p>drag and drop your SVG here</p>
+                    <p>or</p>
+                    <button class="browse-btn trans-in">
+                        browse
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
