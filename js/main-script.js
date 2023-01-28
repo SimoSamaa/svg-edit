@@ -194,7 +194,7 @@ function changeTypeOfImgToSvg() {
                 document.querySelector(".current-color__svg").innerHTML = '';
                 document.querySelector(".current-color__svg").style.backgroundColor = svg.getAttribute("stroke");
             } else {
-                document.querySelector(".current-color__svg").innerHTML = '<img src="/icons/none.svg">';
+                document.querySelector(".current-color__svg").innerHTML = '<img src="icons/none.svg">';
                 document.querySelector(".current-color__svg").style.backgroundColor = "transparent"
             }
 
